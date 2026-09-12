@@ -72,15 +72,13 @@ I solved this by using CSS Grid, Flexbox and media queries to adjust the layout 
 
 ## Live Deployment
 
-**Live Website:** Coming Soon
+**Live Website:**  https://ayeshasiddique8810-ship-it.github.io/aurex-web-internship-ayesha/
 
 ## GitHub Repository
 
-**Repository:** Coming Soon
+**Repository:** https://github.com/ayeshasiddique8810-ship-it/aurex-web-internship-ayesha
 
-## Screenshots
 
-Screenshots of the desktop, tablet and mobile versions will be added after deployment.
 
 ---
 
