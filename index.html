@@ -1,74 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Personal Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ayesha Siddique | Computer Science Student</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
 </head>
 
 <body>
-<header>
-    <h1>My Personal Profile</h1>
-    <p>Welcome to my personal webpage</p>
-</header>
 
-<nav>
-    <a href="#about">About Me</a><br>
-    <a href="#skills">Skills</a><br>
-    <a href="#education">Education</a><br>
-    <a href="#contact">Contact</a>
-</nav>
-<main>
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Hello! My name is Ayesha. I am a Computer Science student
-        interested in web development and technology.
-    </p>
-</section>
-<section id="skills">
-    <h2>Skills</h2>
+    <nav>
+        <div class="nav-brand">
+            <span class="brand-mark">AS</span>
+            <span>Ayesha Siddique </span>
+        </div>
 
-    <ul>
-        <li>C++</li>
-        <li>HTML5</li>
-        <li>Database Management</li>
-        <li>Data Structures and Algorithms</li>
-    </ul>
-</section>
-<section id="education">
-    <h2>Education</h2>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-<p>
-    <strong>BS Computer Science</strong><br>
-    Currently studying in 5th semester.
-</p>
 
-</section>
-<section id="contact">
-    <h2>Contact Me</h2>
+    <main>
 
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <header class="hero">
 
-        <br><br>
+            <div class="hero-content">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <span class="hero-label">
+                    FULL STACK WEB DEVELOPEMENT INTERN
+                </span>
 
-        <br><br>
+                <h1>
+                    Welcome
+                    to
+                    my
+                    personal 
+                    portfolio.
+                </h1>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                <p>
+                    Hello! I'm Ayesha, a Computer Science student
+                    exploring web development and building my
+                    skills one project at a time.
+                </p>
 
-        <br><br>
+                <a href="#skills" class="hero-button">
+                    Explore My Skills
+                    <span>→</span>
+                </a>
 
-        <button type="submit">Send Message</button>
-    </form>
-</section>
-</main>
-<footer>
-    <p>&copy; 2026 Ayesha Siddique. All Rights Reserved.</p>
-</footer>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-circle"></div>
+
+                <div class="visual-card">
+                    <span>&lt;/&gt;</span>
+                    <p>Build. Learn. Create.</p>
+                </div>
+            </div>
+
+        </header>
+
+
+
+        <section id="about">
+
+            <div class="section-heading">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+
+                <p>
+                    I am currently studying Computer Science and
+                    developing my understanding of programming,
+                    databases and web technologies. I enjoy learning through practical projects and
+                    gradually turning ideas into simple, useful
+                    digital experiences.
+                
+
+            </div>
+
+        </section>
+
+
+
+        <section id="skills">
+
+            <div class="section-heading">
+                <h2>Skills</h2>
+            </div>
+
+            </p>
+
+            <ul>
+
+                <li>
+                    
+                    <h3>C++</h3>
+                    <p>Programming & problem solving</p>
+                </li>
+
+                <li>
+                    
+                    <h3>HTML5</h3>
+                    <p>Web structure & semantic markup</p>
+                </li>
+
+                <li>
+                    
+                    <h3>Database Management</h3>
+                    <p>Data organization & database concepts</p>
+                </li>
+
+                <li>
+            
+                    <h3>Data Structures</h3>
+                    <p>Logic, algorithms & problem solving</p>
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <section id="education">
+
+            <div class="section-heading">
+                <h2>Education</h2>
+            </div>
+
+            <div class="education-card">
+
+                <div class="education-year">
+                    BS
+                </div>
+
+                <div>
+                    <h3>BS Computer Science</h3>
+
+                    <p>
+                        Currently studying in 5th semester.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="contact">
+
+            <div class="section-heading">
+                <h2>Contact Me </h2>
+            </div>
+
+        
+
+            <form>
+
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Send Message
+                    <span>→</span>
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <p>© 2026 Ayesha Siddique. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>

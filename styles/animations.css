@@ -1,0 +1,97 @@
+/* ========================================
+   ANIMATIONS & UI INTERACTIONS
+   ======================================== */
+
+
+/* ---------- PAGE LOAD ANIMATION ---------- */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+nav {
+    animation: fadeUp 0.8s ease 0.15s both;
+}
+
+section {
+    animation: fadeUp 0.8s ease 0.3s both;
+}
+
+footer {
+    animation: fadeUp 0.8s ease 0.45s both;
+}
+
+
+/* ---------- SKILL CARD ANIMATION ---------- */
+
+@keyframes skillCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#skills li {
+    animation: skillCard 0.6s ease both;
+}
+
+#skills li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#skills li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#skills li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#skills li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+
+/* ---------- SKILL CARD HOVER ---------- */
+
+#skills li {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* ---------- BUTTON MICRO-INTERACTION ---------- */
+
+#contact button {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+#contact button:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+#contact button:active {
+    transform: scale(0.97);
+}
