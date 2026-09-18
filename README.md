@@ -68,11 +68,11 @@ The updated design and animations were also checked on the live deployment.
 
 ## Live Deployment
 
-**Live Website:**  
+**Live Website:**  https://ayeshasiddique8810-ship-it.github.io/aurex-web-internship-ayesha/
 
 ## GitHub Repository
 
-**Repository:**  https://github.com/ayeshasiddique8810-ship-it/aurex-web-internship-ayesha
+**Repository:**    https://github.com/ayeshasiddique8810-ship-it/aurex-web-internship-ayesha
 
 ------------------------------------------
 © 2026 Ayesha Siddique. All Rights Reserved.
