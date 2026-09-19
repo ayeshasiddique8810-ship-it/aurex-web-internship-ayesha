@@ -3,20 +3,20 @@
    ======================================== */
 
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
+    --primary-color: #3b82f6;
+    --primary-dark: #2563eb;
 
-    --heading-color: #172f4d;
-    --text-color: #263238;
-    --muted-text: #64748b;
+    --heading-color: #e2e8f0;
+    --text-color: #cbd5e1;
+    --muted-text: #94a3b8;
 
-    --background-color: #f7f9fc;
-    --white: #ffffff;
-    --light-blue: #eff6ff;
-    --border-color: #dbeafe;
+    --background-color: #0f172a;
+    --white: #1e293b;
+    --light-blue: #172554;
+    --border-color: #334155;
 
-    --shadow: 0 10px 30px rgba(30, 58, 95, 0.08);
-    --shadow-hover: 0 18px 40px rgba(37, 99, 235, 0.14);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 0 18px 40px rgba(59, 130, 246, 0.18);
 
     --radius-small: 7px;
     --radius-medium: 12px;
@@ -65,9 +65,9 @@ nav {
     margin: 20px auto 0;
     padding: 12px 18px;
 
-    background: #edf1f6;
+    background: #172033;
 
-    border: 1px solid #dce3ec;
+    border: 1px solid #334155;
     border-radius: 14px;
 
     box-shadow: 0 6px 20px rgba(30, 58, 95, 0.07);
@@ -224,7 +224,7 @@ nav:hover {
 
     margin: 0;
 
-    color: var(--heading-color);
+    color: #ffffff;
 
     font-size: clamp(3.2rem, 7vw, 5.8rem);
 
@@ -233,7 +233,7 @@ nav:hover {
 }
 
 .hero h1 span {
-    color: var(--primary-color);
+    color: #60a5fa;
 
     position: relative;
 }
@@ -332,9 +332,9 @@ nav:hover {
     background:
         radial-gradient(
             circle,
-            #ffffff 0%,
-            #eff6ff 65%,
-            #e3efff 100%
+            #1e293b 0%,
+            #172554 65%,
+            #1e3a8a 100%
         );
 
     border: 1px solid var(--border-color);
@@ -437,7 +437,7 @@ nav:hover {
 .visual-card p {
     margin: 0;
 
-    color: var(--heading-color);
+    color: #4b5563;
 
     font-size: 16px;
     font-weight: 700;
@@ -496,7 +496,7 @@ section {
 
 .about-content {
     max-width: 1100px;
-    width: 100%
+    width: 100%;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -687,7 +687,7 @@ section {
 
     padding: 13px 14px;
 
-    background: var(--white);
+    background: #060f24;
 
     border: 1px solid #cbd5e1;
 
