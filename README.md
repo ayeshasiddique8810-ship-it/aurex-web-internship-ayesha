@@ -66,6 +66,10 @@ The website was tested on different viewport sizes to check:
 
 The updated design and animations were also checked on the live deployment.
 
+## Short Learning Reflection
+
+This week, I improved my CSS skills by practicing Grid, Flexbox, animations, transitions, and responsive design. I learned how to create cleaner, interactive, and responsive web layouts.
+
 ## Live Deployment
 
 **Live Website:**  https://ayeshasiddique8810-ship-it.github.io/aurex-web-internship-ayesha/
