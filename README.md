@@ -122,7 +122,7 @@ The application is designed to remain usable across different screen sizes, incl
 
 ---
 
-## List of JavaScript Concepts Practiced
+## JavaScript Concepts Practiced
 
 The project applies the JavaScript fundamentals covered during Week 4.
 
@@ -279,9 +279,15 @@ The project also helped strengthen understanding of:
 - Responsive interface development
 
 ---
-##  Live Deployment Link:   
 
-## GitHub Repository Link:
+# Live Website Link:  https://ayeshasiddique8810-ship-it.github.io/aurex-web-internship-ayesha/
+
+---
+
+# GitHub Repository Link:  https://github.com/ayeshasiddique8810-ship-it/aurex-web-internship-ayesha
+
+
+---
 
 
 ## Project Structure
@@ -298,3 +304,4 @@ aurex-web-internship-ayesha/
 │   └── main.js
 │
 └── README.md
+
