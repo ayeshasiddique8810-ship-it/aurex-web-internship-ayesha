@@ -280,11 +280,11 @@ The project also helped strengthen understanding of:
 
 ---
 
-# Live Website Link:  https://ayeshasiddique8810-ship-it.github.io/aurex-web-internship-ayesha/
+**Live Website Link:**  https://ayeshasiddique8810-ship-it.github.io/aurex-web-internship-ayesha/
 
 ---
 
-# GitHub Repository Link:  https://github.com/ayeshasiddique8810-ship-it/aurex-web-internship-ayesha
+**GitHub Repository Link:**  https://github.com/ayeshasiddique8810-ship-it/aurex-web-internship-ayesha
 
 
 ---
