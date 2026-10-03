@@ -81,6 +81,8 @@ npm run dev
 
 The application will then be available through the local development URL provided by Vite.
 
+---
+
 ### Challanges and Difficulties Faced
 
 During the development of this project, some of the main challenges included:
@@ -91,6 +93,8 @@ During the development of this project, some of the main challenges included:
 - Updating the task list dynamically when tasks were added, completed, or deleted
 - Understanding React's component hierarchy and data flow
 - Working through these challenges helped improve my understanding of how React applications are structured and how different components work together.
+
+---
 
 ### Learning Outcomes
 
