@@ -1,9 +1,9 @@
 # AUREX Full Stack Web Developement Internship Month 2 - Week 1
 
 ## Intern Information
-**Name:** Ayesha Siddique
-**Domain:** Full Stack Enineering Internship
-**Week:** Week 5
+**Intern Name:** Ayesha Siddique<br>
+**Domain:** Full Stack Enineering Internship<br>
+**Week:** Week 1
 
 ## React Task Management Application 
 
