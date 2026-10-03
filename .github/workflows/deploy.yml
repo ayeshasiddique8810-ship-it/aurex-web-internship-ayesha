@@ -39,10 +39,6 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-         path: week-1-react-task-manager/dist
-         
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4     
           path: week-1-react-task-manager/dist
 
       - name: Deploy to GitHub Pages
