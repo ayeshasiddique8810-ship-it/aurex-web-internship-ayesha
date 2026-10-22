@@ -1,3 +1,4 @@
+
 name: Deploy React Apps to GitHub Pages
 
 on:
@@ -13,6 +14,10 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -44,7 +49,7 @@ jobs:
           mkdir -p deploy/week-2-api-dashboard
           cp -r week-1-react-task-manager/dist/. deploy/
           cp -r week-1-react-task-manager/week-2-api-dashboard/dist/. deploy/week-2-api-dashboard/
-           touch deploy/.nojeky11
+          touch deploy/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -55,4 +60,5 @@ jobs:
           path: deploy
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
