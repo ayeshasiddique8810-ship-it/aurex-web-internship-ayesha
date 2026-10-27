@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "08fd6474-a88a-446c-b9f8-af598991f2e0",
+    "name": "AUREX Week 3 Task API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59239561",
+    "_collection_link": "https://go.postman.co/collection/59239561-08fd6474-a88a-446c-b9f8-af598991f2e0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get All Items (GET)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:500/api/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "500",
+          "path": [
+            "api",
+            "items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Item (POST)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"AUREX Week 3 Task\",\r\n  \"description\": \"Testing POST endpoint\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:500/api/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "500",
+          "path": [
+            "api",
+            "items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Item by ID (GET)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:500/api/items/6ae076934665adaa8fe81689",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "500",
+          "path": [
+            "api",
+            "items",
+            "6ae076934665adaa8fe81689"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Item (PUT)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"AUREX Week 3 Task Updated\",\r\n  \"description\": \"Testing PUT endpoint successfully\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:500/api/items/6ae076934665adaa8fe81689",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "500",
+          "path": [
+            "api",
+            "items",
+            "6ae076934665adaa8fe81689"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Item (DELETE)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:500/api/items/6ae076934665adaa8fe81689",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "500",
+          "path": [
+            "api",
+            "items",
+            "6ae076934665adaa8fe81689"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "info": {
+    "name": "AUREX Week 3 Task API",
+    "_postman_id": "9a9f4c6b-3b8f-4b11-9e27-aurexweek3api",
+    "description": "Basic CRUD requests for the Week 3 API. Set baseUrl and itemId variables.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000"
+    },
+    {
+      "key": "itemId",
+      "value": "REPLACE_WITH_ITEM_ID"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health check",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/"
+      }
+    },
+    {
+      "name": "Create item",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Notebook\",\n  \"description\": \"A sample item\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/items"
+      }
+    },
+    {
+      "name": "List items",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/items"
+      }
+    },
+    {
+      "name": "Get item by ID",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/api/items/{{itemId}}"
+      }
+    },
+    {
+      "name": "Update item",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Updated notebook\",\n  \"description\": \"Updated description\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/items/{{itemId}}"
+      }
+    },
+    {
+      "name": "Delete item",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/api/items/{{itemId}}"
+      }
+    }
+  ]
+}
