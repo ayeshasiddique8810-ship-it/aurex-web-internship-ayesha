@@ -85,13 +85,13 @@ The application starts on the configured port and connects to MongoDB Atlas.
 
 Security note: The actual ".env" file contains private configuration and must not be uploaded to GitHub.
 
-##  API Base URL
+## API Base URL
 
 The local base URL for the API is:
 
-http://localhost:500/api/items
+`http://localhost:500/api/items`
 
-The API uses this base URL for item-related operations.
+The backend server must be running for this URL to work. This is a local development URL and is accessible only from the computer running the server.
 
 ##  API Endpoints
 | Method | Endpoint | Purpose |
@@ -103,77 +103,65 @@ The API uses this base URL for item-related operations.
 | PUT | `/api/items/:id` | Update an item |
 | DELETE | `/api/items/:id` | Delete an item |
 
-1. Create an Item
 
-Method: "POST"
 
-URL:
+### .1 Create an Item
 
-http://localhost:500/api/items
+**Method:** `POST`
 
-Request Body:
+**URL:**
 
-{
-  "name": "AUREX Week 3 Task",
+`http://localhost:500/api/items`
+
+**Request Body:**
+
+{  "name": "AUREX Week 3 Task", 
   "description": "Testing POST endpoint"
 }
 
 This endpoint creates a new item in the database.
 
-2. Get All Items
+### 2. Get all Items
 
-Method: "GET"
+**Method:** `GET`
 
-URL:
+**URL:**  http://localhost:500/api/items 
 
-http://localhost:500/api/items
+This endpoint retrieves all available items from the database, along with the item count.
 
-This endpoint retrieves the available items from the database.
+### 3. Get Item by ID
 
-3. Get Item by ID
+**Method:** `GET`
 
-Method: "GET"
+**URL:** http://localhost:500/api/items/ITEM_ID
 
-URL:
+Replace ITEM_ID with the actual MongoDB document ID returned by the create item or get all items endpoint.
+This endpoint retreives a specific item from the database.
 
-http://localhost:500/api/items/ITEM_ID
+### 4. Update an Item 
 
-Replace "ITEM_ID" with the actual MongoDB document ID.
+**Method:** `PUT`
 
-This endpoint retrieves a specific item.
-
-4. Update an Item
-
-Method: "PUT"
-
-URL:
-
-http://localhost:500/api/items/ITEM_ID
-
-Request Body:
+**URL:**  http://localhost:500/api/items/ITEM_ID
 
 {
   "name": "AUREX Week 3 Task Updated",
   "description": "Testing PUT endpoint successfully"
 }
-
-Replace "ITEM_ID" with the ID of the item to update.
-
+ 
+Replace ITEM_ID with the actual ID of the item to update.
 This endpoint updates the specified item's information.
 
-5. Delete an Item
+### 5. Delete an Item 
 
-Method: "DELETE"
+**Method:** `DELETE`
 
-URL:
+**URL:**  http://localhost:500/api/items/ITEM_ID
 
-http://localhost:500/api/items/ITEM_ID
-
-Replace "ITEM_ID" with the ID of the item to delete.
-
+Replace ITEM_ID with the actual ID of the item to delete.
 This endpoint removes the specified item from the database.
 
-##  Database and Model Explanation
+### Database and Model Explanation
 
 **MongoDB Atlas:**
 
@@ -255,7 +243,7 @@ HTTP status codes communicate the outcome of an API request.
 |---|---|
 |200 OK| The request completed successfully|
 |201 Created| A resource was created successfully, if returned by the implementation|
-|400 Bad Request| |The request contains invalid input, if handled by the implementation|
+|400 Bad Request| The request contains invalid input, if handled by the implementation|
 |404 Not Found| The requested resource or route was not found|
 |500 Internal Server Error| An unexpected server-side error occurred|
 
