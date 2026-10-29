@@ -161,7 +161,7 @@ This endpoint updates the specified item's information.
 Replace ITEM_ID with the actual ID of the item to delete.
 This endpoint removes the specified item from the database.
 
-### Database and Model Explanation
+## Database and Model Explanation
 
 **MongoDB Atlas:**
 
