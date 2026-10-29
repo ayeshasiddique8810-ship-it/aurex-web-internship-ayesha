@@ -1,4 +1,4 @@
-# AUREX Full Stack Web Developement Month 2 — Week 3: Backend Task API
+# AUREX Full Stack Web Development Month 2 — Week 3: Backend Task API
 **Internship:** AUREX Full-Stack Engineering Internship  
 **Project:** Task API  
 **Month:** 2  
@@ -96,7 +96,6 @@ The backend server must be running for this URL to work. This is a local develop
 ##  API Endpoints
 | Method | Endpoint | Purpose |
 |---|---|---|
-| GET | `/` | Health check |
 | POST | `/api/items` | Create an item |
 | GET | `/api/items` | List items |
 | GET | `/api/items/:id` | Get one item |
@@ -105,7 +104,7 @@ The backend server must be running for this URL to work. This is a local develop
 
 
 
-### .1 Create an Item
+### 1. Create an Item
 
 **Method:** `POST`
 
@@ -115,7 +114,8 @@ The backend server must be running for this URL to work. This is a local develop
 
 **Request Body:**
 
-{  "name": "AUREX Week 3 Task", 
+{
+  "name": "AUREX Week 3 Task",
   "description": "Testing POST endpoint"
 }
 
@@ -136,7 +136,7 @@ This endpoint retrieves all available items from the database, along with the it
 **URL:** http://localhost:500/api/items/ITEM_ID
 
 Replace ITEM_ID with the actual MongoDB document ID returned by the create item or get all items endpoint.
-This endpoint retreives a specific item from the database.
+This endpoint retrieves a specific item from the database.
 
 ### 4. Update an Item 
 
@@ -167,7 +167,7 @@ This endpoint removes the specified item from the database.
 
 MongoDB Atlas is used as the cloud database for storing item records. The backend application connects to the database using a connection string configured through an environment variable.
 
-Mongoose
+**Mongoose:**
 
 Mongoose provides the model and database interaction layer used by the application. It allows the backend to perform operations on item documents stored in MongoDB.
 
@@ -301,27 +301,35 @@ By completing this project, I developed a practical understanding of backend dev
 
 Overall, this project strengthened my understanding of how a backend application communicates with a database and how REST APIs manage data. It also provided a foundation for learning more advanced backend concepts and integrating APIs with frontend applications.
 
-## 5. Project Structure
+## Submission Link
+
+- **GitHub Repository:** https://github.com/ayeshasiddique8810-ship-it/aurex-web-internship-ayesha
+
+##  Project Structure
 
 ```text
-week-3-task-api/
-├── src/
-│   ├── config/
-│   │   └── README.md
-│   ├── controllers/
-│   │   └── itemController.js
-│   ├── middleware/
-│   │   └── notFound.js
-│   ├── models/
-│   │   └── Item.js
-│   ├── routes/
-│   │   └── itemRoutes.js
-│   └── server.js
-├── postman/
-│   └── Week-3-Task-API.postman_collection.json
-├── .env
-├── .env.example
-├── .gitignore
-├── package.json
-├── package-lock.json
-└── README.md
+backend/
+└── week-3-task-api/
+    ├── src/
+    │   ├── config/
+    │   │   └── README.md
+    │   ├── controllers/
+    │   │   └── itemController.js
+    │   ├── middleware/
+    │   │   └── notFound.js
+    │   ├── models/
+    │   │   └── Item.js
+    │   ├── routes/
+    │   │   └── itemRoutes.js
+    │   └── server.js
+    ├── postman/
+    │   ├── Week-3-Task-API.postman_collection.json
+    │   └── Week-3-Task-API-v2.postman_collection.json
+    ├── .env
+    Local only; not committed
+    ├── .env.example
+    Safe template
+    ├── .gitignore
+    ├── package.json
+    ├── package-lock.json
+    └── README.md
