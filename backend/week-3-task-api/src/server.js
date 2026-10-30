@@ -25,10 +25,23 @@ async function connectDB() {
   }
 
   if (!connectionPromise) {
-    connectionPromise = mongoose.connect(uri).catch((error) => {
-      connectionPromise = null;
-      throw error;
-    });
+   connectionPromise = mongoose.connect(uri).catch((error) => {
+  connectionPromise = null;
+
+  console.error("MongoDB connection diagnostic:");
+
+  if (error.reason?.servers) {
+    for (const [address, server] of error.reason.servers) {
+      console.error({
+        address,
+        serverType: server.type,
+        serverError: server.error?.message || "No additional details"
+      });
+    }
+  }
+
+  throw error;
+});
   }
 
   await connectionPromise;
