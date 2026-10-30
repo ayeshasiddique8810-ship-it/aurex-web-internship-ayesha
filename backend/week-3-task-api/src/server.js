@@ -1,4 +1,6 @@
-require("dotenv").config();
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 
 const express = require("express");
 const mongoose = require("mongoose");
@@ -8,6 +10,38 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
+
+let connectionPromise;
+
+async function connectDB() {
+  const uri = process.env.MONGODB_URI;
+
+  if (!uri) {
+    throw new Error("MONGODB_URI is missing.");
+  }
+
+  if (mongoose.connection.readyState === 1) {
+    return;
+  }
+
+  if (!connectionPromise) {
+    connectionPromise = mongoose.connect(uri).catch((error) => {
+      connectionPromise = null;
+      throw error;
+    });
+  }
+
+  await connectionPromise;
+}
+
+app.use(async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (error) {
+    next(error);
+  }
+});
 
 app.get("/", (req, res) => {
   res.status(200).json({
@@ -35,24 +69,17 @@ app.use((err, req, res, next) => {
   });
 });
 
-async function startServer() {
-  try {
-    const uri = process.env.MONGODB_URI;
+module.exports = app;
 
-    if (!uri) {
-      throw new Error("MONGODB_URI is missing. Add it to your .env file.");
-    }
-
-    await mongoose.connect(uri);
-    console.log("Connected to MongoDB");
-
-    app.listen(PORT, () => {
-      console.log(`Server running at http://localhost:${PORT}`);
+if (require.main === module) {
+  connectDB()
+    .then(() => {
+      app.listen(PORT, () => {
+        console.log(`Server running at http://localhost:${PORT}`);
+      });
+    })
+    .catch((error) => {
+      console.error("Unable to start server:", error.message);
+      process.exit(1);
     });
-  } catch (error) {
-    console.error("Unable to start server:", error.message);
-    process.exit(1);
-  }
 }
-
-startServer();
