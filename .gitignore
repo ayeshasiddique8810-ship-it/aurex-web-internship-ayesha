@@ -14,3 +14,5 @@ dist/
 
 # Postman local workspace files
 .postman/
+# Postman local workspace
+/postman/
