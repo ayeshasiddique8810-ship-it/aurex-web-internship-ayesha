@@ -1,4 +1,4 @@
-# AUREX Full Stack Web Developement Internship Month 2 - Week 1
+# AUREX Full Stack Web Development Internship Month 2 - Week 1
 
 ## Intern Information
 **Name:** Ayesha Siddique

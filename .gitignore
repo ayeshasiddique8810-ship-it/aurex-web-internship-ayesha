@@ -1,6 +1,12 @@
+# Week 3 backend environment and dependencies
 backend/week-3-task-api/.env
 backend/week-3-task-api/node_modules/
+
 /node_modules/
 /dist/
-backend/week-3-task-api/.env
-backend/week-3-task-api/node_modules/
+
+# Postman local workspace files
+/.postman/
+/postman/
+node_modules/
+dist/
