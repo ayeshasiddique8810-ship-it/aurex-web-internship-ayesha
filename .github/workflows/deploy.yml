@@ -1,4 +1,3 @@
-
 name: Deploy React Apps to GitHub Pages
 
 on:
@@ -37,18 +36,18 @@ jobs:
         run: npm run build
 
       - name: Install Week 2 dependencies
-        working-directory: week-1-react-task-manager/week-2-api-dashboard
+        working-directory: week-2-api-dashboard/frontend
         run: npm ci
 
       - name: Build Week 2 app
-        working-directory: week-1-react-task-manager/week-2-api-dashboard
+        working-directory: week-2-api-dashboard/frontend
         run: npm run build
 
       - name: Prepare deployment
         run: |
           mkdir -p deploy/week-2-api-dashboard
           cp -r week-1-react-task-manager/dist/. deploy/
-          cp -r week-1-react-task-manager/week-2-api-dashboard/dist/. deploy/week-2-api-dashboard/
+          cp -r week-2-api-dashboard/frontend/dist/. deploy/week-2-api-dashboard/
           touch deploy/.nojekyll
 
       - name: Setup Pages
