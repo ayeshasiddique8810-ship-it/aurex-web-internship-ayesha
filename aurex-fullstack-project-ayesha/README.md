@@ -282,8 +282,8 @@ Through this project, I practiced:
 
 ## Deployment 
 
-**Live Frontend:** Not deployed yet  
-**Live Backend:** Not deployed yet  
+**Live Frontend:** https://aurex-web-internship-ayesha-dlpm7jn63-aurex-ayesha.vercel.app/  
+**Live Backend:** https://aurex-week-4-backend-9ibxlw5p0-aurex-ayesha.vercel.app
 **GitHub Repository:** https://github.com/ayeshasiddique8810-ship-it/aurex-web-internship-ayesha
 
 ## Conclusion
